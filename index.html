@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centro Clínica</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav id="navigation">
+
+    <div class="wrapper">
+      <div class="row">
+
+        <nav class="nav-expended">
+          <a class="logo"  href="#home">
+            <img src="./assets/svg/CentoClinicaWhite.png" alt="">
+          </a>
+
+          <a class="icon " href="#home"><img src="./assets/svg/logo.svg" alt="Logo"></a>
+
+          <button aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()" class="open-menu">
+            <img src="./assets/svg/openMenu.svg" alt="Abrir menu">
+          </button>
+
+          <button aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()" class="close-menu">
+            <img src="./assets/svg/closeMenu.svg" alt="">
+          </button>
+
+        </nav>
+
+        <div class="menu">
+          <ul>
+            <li><a onclick="closeMenu()" href="#home">Íncio</a></li>
+            <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+            <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
+            <li><a onclick="closeMenu()" href="#photos">Fotos</a></li>
+          </ul>
+      
+          <a class="button" href="https://wa.me/5585985771554?text=Ol%C3%A1%2C+gostaria+de+marcar+uma+consulta+para" target="_blank">Agende sua consulta</a>
+
+          <ul class="social-links">
+          <li>
+            <a href="https://www.instagram.com/centroclinica13/" target="_blank">
+             <img src="./assets/svg/instagram.svg" alt="Icon instagram">
+            </a>
+          </li>
+
+          <li>
+            <a onclick="closeMenu()" href="#contact">
+              <img src="./assets/svg/telephone.svg" alt="Icon telephone">
+            </a>
+          </li>
+
+          <li>
+            <a href="https://wa.me/5585985771554?text=Ol%C3%A1%2C+gostaria+de+marcar+uma+consulta+para...++" target="_blank">
+              <img src="./assets/svg/whatsapp.svg" alt="Icon whatsapp">
+            </a> 
+          </li>
+          </ul>
+
+      </div>
+
+      <div class="buttonNav">
+        <a class="colButton" href="https://wa.me/5585985771554?text=Ol%C3%A1%2C+gostaria+de+marcar+uma+consulta+para" target="_blank">Agende sua consulta</a>
+      </div>
+
+      </div>
+    </div>
+
+  </nav>
+
+ <section id="home">
+    <div class="wrapper container">
+
+      <div class="header">
+        <header>
+          <h4>BOAS VINDAS A CENTRO CLÍNICA &#128075;</h4>
+          <h1>Assistência médica simplificada para todos</h1>
+        </header>
+        <p>
+          Os médicos da Centro Clínica vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura a longo prazo.
+        </p>
+        <a class="button" href="https://wa.me/5585985771554?text=Ol%C3%A1%2C+gostaria+de+marcar+uma+consulta++">
+          <img src="./assets/svg/whatsapp.svg" alt=""> Agende sua consulta
+        </a>
+      </div>
+
+
+    <div class="backgroundImage">
+      <img class="doctor" src="images/doctorDesktop.png" alt="Doutor dando um joia com a mão com avenetal azul">
+    </div>
+
+    <div class="content">
+      <div class="stats">
+        <h3>+5.000</h3>
+        <p>Pacientes atendidos</p>
+      </div>
+
+      <div class="stats col-b">
+        <h3>+8</h3>
+        <p>Especialidades disponíveis</p>
+      </div>
+
+      <div class="stats">
+        <h3>+5</h3>
+        <p>Anos de atendimento</p>
+      </div>
+    </div>
+
+  </div>
+  </section>
+
+  <section id="services">
+    <div class="services">
+      <h4>Serviços</h4>
+      <h2>Como podemos ajudá-lo(a) a se sentir melhor?</h2>
+    </div>
+  
+
+  <em>
+    <p id="observation">*Consulte as especialidades com atendimento por convênios.</p> 
+  </em>
+
+  <div class="cards">
+
+    <div class="Card">
+      <header class="headerCard">
+        <h4>Ginecologista</h4>
+          <button arial-expaded="true" aria-label="Fechar card" onclick="closeCard()" class="closeCard">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L1 11M1 1L11 11" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <svg class="iconCard" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="10" cy="10" r="10" fill="#DCE9E2"/>
+            <path d="M14.2425 6.81818L8.40917 12.6515L5.75766 9.99999" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+      </header> 
+
+      <img src="./assets/ginecologia.png" alt="icone de um sistema reprodutor feminino" />
+
+      <div class="infoCardExpended">
+        <p>O médico ginecologista é responsável pela saúde da mulher! Dessa forma, isto inclui atenção especial ao órgão genital feminino (Incluindo vagina e órgãos internos, como trompas, úteros e ovários) e as mamas. </p>
+        <a class="button" href="https://wa.me/5585985771554?text=Ol%C3%A1%2C+gostaria+de+marcar+uma+consulta++" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.8337 11.6667C13.667 11.5834 12.5837 11.0834 12.417 11C12.2503 10.9167 12.0837 10.9167 11.917 11.0834C11.7503 11.25 11.417 11.75 11.2503 11.9167C11.167 12.0834 11.0003 12.0834 10.8337 12C10.2503 11.75 9.66699 11.4167 9.16699 11C8.75033 10.5834 8.33366 10.0834 8.00033 9.58337C7.91699 9.41671 8.00033 9.25004 8.08366 9.16671C8.16699 9.08337 8.25033 8.91671 8.41699 8.83337C8.50033 8.75004 8.58366 8.58337 8.58366 8.50004C8.66699 8.41671 8.66699 8.25004 8.58366 8.16671C8.50033 8.08337 8.08366 7.08337 7.91699 6.66671C7.83366 6.08337 7.66699 6.08337 7.50033 6.08337C7.41699 6.08337 7.25033 6.08337 7.08366 6.08337C6.91699 6.08337 6.66699 6.25004 6.58366 6.33337C6.08366 6.83337 5.83366 7.41671 5.83366 8.08337C5.91699 8.83337 6.16699 9.58337 6.66699 10.25C7.58366 11.5834 8.75033 12.6667 10.167 13.3334C10.5837 13.5 10.917 13.6667 11.3337 13.75C11.7503 13.9167 12.167 13.9167 12.667 13.8334C13.2503 13.75 13.7503 13.3334 14.0837 12.8334C14.2503 12.5 14.2503 12.1667 14.167 11.8334C14.167 11.8334 14.0003 11.75 13.8337 11.6667ZM15.917 4.08337C12.667 0.833374 7.41699 0.833374 4.16699 4.08337C1.50033 6.75004 1.00033 10.8334 2.83366 14.0834L1.66699 18.3334L6.08366 17.1667C7.33366 17.8334 8.66699 18.1667 10.0003 18.1667C14.5837 18.1667 18.2503 14.5 18.2503 9.91671C18.3337 7.75004 17.417 5.66671 15.917 4.08337ZM13.667 15.75C12.5837 16.4167 11.3337 16.8334 10.0003 16.8334C8.75033 16.8334 7.58366 16.5 6.50033 15.9167L6.25033 15.75L3.66699 16.4167L4.33366 13.9167L4.16699 13.6667C2.16699 10.3334 3.16699 6.16671 6.41699 4.08337C9.66699 2.00004 13.8337 3.08337 15.8337 6.25004C17.8337 9.50004 16.917 13.75 13.667 15.75Z" fill="white"/>
+          </svg> Agende sua consulta
+        </a>
+      </div>
+
+      <div class="contact">
+        <button aria-expanded="false" aria-label="Abrir card" onclick="cardOpen()" class="openCard contact">clique para saber +</button>
+      </div>
+    </div>
+
+    <div class="Card">
+      <header class="headerCard">
+        <h4>Proctologista</h4>
+          <button arial-expaded="true" aria-label="Fechar card" onclick="closeCard()" class="closeCard">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L1 11M1 1L11 11" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <svg class="iconCard" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="10" cy="10" r="10" fill="#DCE9E2"/>
+            <path d="M14.2425 6.81818L8.40917 12.6515L5.75766 9.99999" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+      </header>  
+
+      <img src="./assets/proctologia.png" alt="icone de um sistema digestivo"/>
+
+      <div class="infoCardExpended">
+        <p>O proctologista é o médico especializado no diagnóstico e tratamento de doenças ou alterações relacionadas à parte final do sistema digestivo, o que inclui o intestino grosso (cólon), ânus e reto.</p>
+        <a class="button" href="https://wa.me/5585985771554?text=Ol%C3%A1%2C+gostaria+de+marcar+uma+consulta++" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.8337 11.6667C13.667 11.5834 12.5837 11.0834 12.417 11C12.2503 10.9167 12.0837 10.9167 11.917 11.0834C11.7503 11.25 11.417 11.75 11.2503 11.9167C11.167 12.0834 11.0003 12.0834 10.8337 12C10.2503 11.75 9.66699 11.4167 9.16699 11C8.75033 10.5834 8.33366 10.0834 8.00033 9.58337C7.91699 9.41671 8.00033 9.25004 8.08366 9.16671C8.16699 9.08337 8.25033 8.91671 8.41699 8.83337C8.50033 8.75004 8.58366 8.58337 8.58366 8.50004C8.66699 8.41671 8.66699 8.25004 8.58366 8.16671C8.50033 8.08337 8.08366 7.08337 7.91699 6.66671C7.83366 6.08337 7.66699 6.08337 7.50033 6.08337C7.41699 6.08337 7.25033 6.08337 7.08366 6.08337C6.91699 6.08337 6.66699 6.25004 6.58366 6.33337C6.08366 6.83337 5.83366 7.41671 5.83366 8.08337C5.91699 8.83337 6.16699 9.58337 6.66699 10.25C7.58366 11.5834 8.75033 12.6667 10.167 13.3334C10.5837 13.5 10.917 13.6667 11.3337 13.75C11.7503 13.9167 12.167 13.9167 12.667 13.8334C13.2503 13.75 13.7503 13.3334 14.0837 12.8334C14.2503 12.5 14.2503 12.1667 14.167 11.8334C14.167 11.8334 14.0003 11.75 13.8337 11.6667ZM15.917 4.08337C12.667 0.833374 7.41699 0.833374 4.16699 4.08337C1.50033 6.75004 1.00033 10.8334 2.83366 14.0834L1.66699 18.3334L6.08366 17.1667C7.33366 17.8334 8.66699 18.1667 10.0003 18.1667C14.5837 18.1667 18.2503 14.5 18.2503 9.91671C18.3337 7.75004 17.417 5.66671 15.917 4.08337ZM13.667 15.75C12.5837 16.4167 11.3337 16.8334 10.0003 16.8334C8.75033 16.8334 7.58366 16.5 6.50033 15.9167L6.25033 15.75L3.66699 16.4167L4.33366 13.9167L4.16699 13.6667C2.16699 10.3334 3.16699 6.16671 6.41699 4.08337C9.66699 2.00004 13.8337 3.08337 15.8337 6.25004C17.8337 9.50004 16.917 13.75 13.667 15.75Z" fill="white"/>
+          </svg> Agende sua consulta
+        </a>
+      </div>
+
+      <div class="contact">
+        <button aria-expanded="false" aria-label="Abrir card" onclick="cardOpen()" class="openCard contact">clique para saber +</button>
+      </div>
+    </div>
+
+    <div class="Card">
+      <header class="headerCard">
+        <h4>Ortopedista</h4>
+          <button arial-expaded="true" aria-label="Fechar card" onclick="closeCard()" class="closeCard">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L1 11M1 1L11 11" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <svg class="iconCard" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="10" cy="10" r="10" fill="#DCE9E2"/>
+            <path d="M14.2425 6.81818L8.40917 12.6515L5.75766 9.99999" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+      </header>
+
+      <img src="./assets/ortopedico.png" alt="icone osseo de uma perna">
+
+      <div class="infoCardExpended">
+        <p>Médico especialista em diagnosticar e acompanhar lesões que acometem todo sistema locomotor. Inclui todas as doenças e traumas que afetam músculos, articulações, ossos e ligamentos.</p>
+        <a class="button" href="https://wa.me/5585985771554?text=Ol%C3%A1%2C+gostaria+de+marcar+uma+consulta++" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.8337 11.6667C13.667 11.5834 12.5837 11.0834 12.417 11C12.2503 10.9167 12.0837 10.9167 11.917 11.0834C11.7503 11.25 11.417 11.75 11.2503 11.9167C11.167 12.0834 11.0003 12.0834 10.8337 12C10.2503 11.75 9.66699 11.4167 9.16699 11C8.75033 10.5834 8.33366 10.0834 8.00033 9.58337C7.91699 9.41671 8.00033 9.25004 8.08366 9.16671C8.16699 9.08337 8.25033 8.91671 8.41699 8.83337C8.50033 8.75004 8.58366 8.58337 8.58366 8.50004C8.66699 8.41671 8.66699 8.25004 8.58366 8.16671C8.50033 8.08337 8.08366 7.08337 7.91699 6.66671C7.83366 6.08337 7.66699 6.08337 7.50033 6.08337C7.41699 6.08337 7.25033 6.08337 7.08366 6.08337C6.91699 6.08337 6.66699 6.25004 6.58366 6.33337C6.08366 6.83337 5.83366 7.41671 5.83366 8.08337C5.91699 8.83337 6.16699 9.58337 6.66699 10.25C7.58366 11.5834 8.75033 12.6667 10.167 13.3334C10.5837 13.5 10.917 13.6667 11.3337 13.75C11.7503 13.9167 12.167 13.9167 12.667 13.8334C13.2503 13.75 13.7503 13.3334 14.0837 12.8334C14.2503 12.5 14.2503 12.1667 14.167 11.8334C14.167 11.8334 14.0003 11.75 13.8337 11.6667ZM15.917 4.08337C12.667 0.833374 7.41699 0.833374 4.16699 4.08337C1.50033 6.75004 1.00033 10.8334 2.83366 14.0834L1.66699 18.3334L6.08366 17.1667C7.33366 17.8334 8.66699 18.1667 10.0003 18.1667C14.5837 18.1667 18.2503 14.5 18.2503 9.91671C18.3337 7.75004 17.417 5.66671 15.917 4.08337ZM13.667 15.75C12.5837 16.4167 11.3337 16.8334 10.0003 16.8334C8.75033 16.8334 7.58366 16.5 6.50033 15.9167L6.25033 15.75L3.66699 16.4167L4.33366 13.9167L4.16699 13.6667C2.16699 10.3334 3.16699 6.16671 6.41699 4.08337C9.66699 2.00004 13.8337 3.08337 15.8337 6.25004C17.8337 9.50004 16.917 13.75 13.667 15.75Z" fill="white"/>
+          </svg> Agende sua consulta
+        </a>
+      </div>
+
+      <div class="contact">
+        <button aria-expanded="false" aria-label="Abrir card" onclick="cardOpen()" class="openCard contact">clique para saber +</button>
+      </div>
+    </div>
+
+    <div class="Card">
+      <header class="headerCard">
+        <h4>Urologista</h4>
+          <button arial-expaded="true" aria-label="Fechar card" onclick="closeCard()" class="closeCard">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L1 11M1 1L11 11" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <svg class="iconCard" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="10" cy="10" r="10" fill="#DCE9E2"/>
+            <path d="M14.2425 6.81818L8.40917 12.6515L5.75766 9.99999" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+      </header>     
+
+      <img src="./assets/urologia.png" alt="icone de um sistema urinário">
+
+      <div class="infoCardExpended">
+        <p>Médico especialista responsável por tratar e diagnosticar as doenças do trato urinário e doenças relativas às adrenais ou glândulas suprarrenais. Trata a saúde da bexiga, rins, uretra e ureteres.</p>
+        <a class="button" href="https://wa.me/5585985771554?text=Ol%C3%A1%2C+gostaria+de+marcar+uma+consulta++" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.8337 11.6667C13.667 11.5834 12.5837 11.0834 12.417 11C12.2503 10.9167 12.0837 10.9167 11.917 11.0834C11.7503 11.25 11.417 11.75 11.2503 11.9167C11.167 12.0834 11.0003 12.0834 10.8337 12C10.2503 11.75 9.66699 11.4167 9.16699 11C8.75033 10.5834 8.33366 10.0834 8.00033 9.58337C7.91699 9.41671 8.00033 9.25004 8.08366 9.16671C8.16699 9.08337 8.25033 8.91671 8.41699 8.83337C8.50033 8.75004 8.58366 8.58337 8.58366 8.50004C8.66699 8.41671 8.66699 8.25004 8.58366 8.16671C8.50033 8.08337 8.08366 7.08337 7.91699 6.66671C7.83366 6.08337 7.66699 6.08337 7.50033 6.08337C7.41699 6.08337 7.25033 6.08337 7.08366 6.08337C6.91699 6.08337 6.66699 6.25004 6.58366 6.33337C6.08366 6.83337 5.83366 7.41671 5.83366 8.08337C5.91699 8.83337 6.16699 9.58337 6.66699 10.25C7.58366 11.5834 8.75033 12.6667 10.167 13.3334C10.5837 13.5 10.917 13.6667 11.3337 13.75C11.7503 13.9167 12.167 13.9167 12.667 13.8334C13.2503 13.75 13.7503 13.3334 14.0837 12.8334C14.2503 12.5 14.2503 12.1667 14.167 11.8334C14.167 11.8334 14.0003 11.75 13.8337 11.6667ZM15.917 4.08337C12.667 0.833374 7.41699 0.833374 4.16699 4.08337C1.50033 6.75004 1.00033 10.8334 2.83366 14.0834L1.66699 18.3334L6.08366 17.1667C7.33366 17.8334 8.66699 18.1667 10.0003 18.1667C14.5837 18.1667 18.2503 14.5 18.2503 9.91671C18.3337 7.75004 17.417 5.66671 15.917 4.08337ZM13.667 15.75C12.5837 16.4167 11.3337 16.8334 10.0003 16.8334C8.75033 16.8334 7.58366 16.5 6.50033 15.9167L6.25033 15.75L3.66699 16.4167L4.33366 13.9167L4.16699 13.6667C2.16699 10.3334 3.16699 6.16671 6.41699 4.08337C9.66699 2.00004 13.8337 3.08337 15.8337 6.25004C17.8337 9.50004 16.917 13.75 13.667 15.75Z" fill="white"/>
+          </svg> Agende sua consulta
+        </a>
+      </div>
+
+      <div class="contact">
+        <button aria-expanded="false" aria-label="Abrir card" onclick="cardOpen()" class="openCard contact">clique para saber +</button>
+      </div>
+    </div>
+
+    <div class="Card">
+      <header class="headerCard">
+        <h4>Cirugião geral</h4>
+          <button arial-expaded="true" aria-label="Fechar card" onclick="closeCard()" class="closeCard">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L1 11M1 1L11 11" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <svg class="iconCard" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="10" cy="10" r="10" fill="#DCE9E2"/>
+            <path d="M14.2425 6.81818L8.40917 12.6515L5.75766 9.99999" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+      </header>  
+
+      <img src="./assets/sala-de-operacao.png" alt="icone de um meca com um paciente">
+
+      <div class="infoCardExpended">
+        <p>Médico especialista treinado para o manejo cirúrgico das afecções mais diversas do organismo como um todo, com ênfase no trauma, urgência e emergência.</p>
+        <a class="button" href="https://wa.me/5585985771554?text=Ol%C3%A1%2C+gostaria+de+marcar+uma+consulta++" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.8337 11.6667C13.667 11.5834 12.5837 11.0834 12.417 11C12.2503 10.9167 12.0837 10.9167 11.917 11.0834C11.7503 11.25 11.417 11.75 11.2503 11.9167C11.167 12.0834 11.0003 12.0834 10.8337 12C10.2503 11.75 9.66699 11.4167 9.16699 11C8.75033 10.5834 8.33366 10.0834 8.00033 9.58337C7.91699 9.41671 8.00033 9.25004 8.08366 9.16671C8.16699 9.08337 8.25033 8.91671 8.41699 8.83337C8.50033 8.75004 8.58366 8.58337 8.58366 8.50004C8.66699 8.41671 8.66699 8.25004 8.58366 8.16671C8.50033 8.08337 8.08366 7.08337 7.91699 6.66671C7.83366 6.08337 7.66699 6.08337 7.50033 6.08337C7.41699 6.08337 7.25033 6.08337 7.08366 6.08337C6.91699 6.08337 6.66699 6.25004 6.58366 6.33337C6.08366 6.83337 5.83366 7.41671 5.83366 8.08337C5.91699 8.83337 6.16699 9.58337 6.66699 10.25C7.58366 11.5834 8.75033 12.6667 10.167 13.3334C10.5837 13.5 10.917 13.6667 11.3337 13.75C11.7503 13.9167 12.167 13.9167 12.667 13.8334C13.2503 13.75 13.7503 13.3334 14.0837 12.8334C14.2503 12.5 14.2503 12.1667 14.167 11.8334C14.167 11.8334 14.0003 11.75 13.8337 11.6667ZM15.917 4.08337C12.667 0.833374 7.41699 0.833374 4.16699 4.08337C1.50033 6.75004 1.00033 10.8334 2.83366 14.0834L1.66699 18.3334L6.08366 17.1667C7.33366 17.8334 8.66699 18.1667 10.0003 18.1667C14.5837 18.1667 18.2503 14.5 18.2503 9.91671C18.3337 7.75004 17.417 5.66671 15.917 4.08337ZM13.667 15.75C12.5837 16.4167 11.3337 16.8334 10.0003 16.8334C8.75033 16.8334 7.58366 16.5 6.50033 15.9167L6.25033 15.75L3.66699 16.4167L4.33366 13.9167L4.16699 13.6667C2.16699 10.3334 3.16699 6.16671 6.41699 4.08337C9.66699 2.00004 13.8337 3.08337 15.8337 6.25004C17.8337 9.50004 16.917 13.75 13.667 15.75Z" fill="white"/>
+          </svg> Agende sua consulta
+        </a>
+      </div>
+
+      <div class="contact">
+        <button aria-expanded="false" aria-label="Abrir card" onclick="cardOpen()" class="openCard contact">clique para saber +</button>
+      </div>
+    </div>
+
+    <div class="Card">
+      <header class="headerCard">
+        <h4>Psiquiatria </h4>
+          <button arial-expaded="true" aria-label="Fechar card" onclick="closeCard()" class="closeCard">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L1 11M1 1L11 11" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <svg class="iconCard" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="10" cy="10" r="10" fill="#DCE9E2"/>
+            <path d="M14.2425 6.81818L8.40917 12.6515L5.75766 9.99999" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+      </header>     
+
+      <img src="./assets/psiquiatria.png" alt="icone de um sistema nervoso">
+
+      <div class="infoCardExpended">
+        <p>Médico especialista em diagnóstico de desordens mentais, como depressão, ansiedade, esquizofrenia e até mesmo de casos de dependência em substâncias químicas.</p>
+        <a class="button" href="https://wa.me/5585985771554?text=Ol%C3%A1%2C+gostaria+de+marcar+uma+consulta++" target="_blank"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.8337 11.6667C13.667 11.5834 12.5837 11.0834 12.417 11C12.2503 10.9167 12.0837 10.9167 11.917 11.0834C11.7503 11.25 11.417 11.75 11.2503 11.9167C11.167 12.0834 11.0003 12.0834 10.8337 12C10.2503 11.75 9.66699 11.4167 9.16699 11C8.75033 10.5834 8.33366 10.0834 8.00033 9.58337C7.91699 9.41671 8.00033 9.25004 8.08366 9.16671C8.16699 9.08337 8.25033 8.91671 8.41699 8.83337C8.50033 8.75004 8.58366 8.58337 8.58366 8.50004C8.66699 8.41671 8.66699 8.25004 8.58366 8.16671C8.50033 8.08337 8.08366 7.08337 7.91699 6.66671C7.83366 6.08337 7.66699 6.08337 7.50033 6.08337C7.41699 6.08337 7.25033 6.08337 7.08366 6.08337C6.91699 6.08337 6.66699 6.25004 6.58366 6.33337C6.08366 6.83337 5.83366 7.41671 5.83366 8.08337C5.91699 8.83337 6.16699 9.58337 6.66699 10.25C7.58366 11.5834 8.75033 12.6667 10.167 13.3334C10.5837 13.5 10.917 13.6667 11.3337 13.75C11.7503 13.9167 12.167 13.9167 12.667 13.8334C13.2503 13.75 13.7503 13.3334 14.0837 12.8334C14.2503 12.5 14.2503 12.1667 14.167 11.8334C14.167 11.8334 14.0003 11.75 13.8337 11.6667ZM15.917 4.08337C12.667 0.833374 7.41699 0.833374 4.16699 4.08337C1.50033 6.75004 1.00033 10.8334 2.83366 14.0834L1.66699 18.3334L6.08366 17.1667C7.33366 17.8334 8.66699 18.1667 10.0003 18.1667C14.5837 18.1667 18.2503 14.5 18.2503 9.91671C18.3337 7.75004 17.417 5.66671 15.917 4.08337ZM13.667 15.75C12.5837 16.4167 11.3337 16.8334 10.0003 16.8334C8.75033 16.8334 7.58366 16.5 6.50033 15.9167L6.25033 15.75L3.66699 16.4167L4.33366 13.9167L4.16699 13.6667C2.16699 10.3334 3.16699 6.16671 6.41699 4.08337C9.66699 2.00004 13.8337 3.08337 15.8337 6.25004C17.8337 9.50004 16.917 13.75 13.667 15.75Z" fill="white"/>
+          </svg> Agende sua consulta</a>
+      </div>
+
+      <div class="contact">
+        <button aria-expanded="false" aria-label="Abrir card" onclick="cardOpen()" class="openCard contact">clique para saber +</button>
+      </div>
+    </div>
+
+    <div class="Card">
+      <header class="headerCard">
+        <h4>Laboratório</h4>
+          <button arial-expaded="true" aria-label="Fechar card" onclick="closeCard()" class="closeCard">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L1 11M1 1L11 11" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <svg class="iconCard" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="10" cy="10" r="10" fill="#DCE9E2"/>
+            <path d="M14.2425 6.81818L8.40917 12.6515L5.75766 9.99999" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+      </header>   
+      <img src="./assets/laboratorio.png" alt="icone de um recipiente de coleta">
+
+      <div class="infoCardExpended">
+        <p>Realizar diversos exames específicos de acordo com solicitação médica. Preparar a amostra do material colhido. Orientar o paciente a respeito do tipo de exame e da coleta do material. </p>
+        <a class="button" href="https://wa.me/5585985771554?text=Ol%C3%A1%2C+gostaria+de+marcar+uma+consulta++" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.8337 11.6667C13.667 11.5834 12.5837 11.0834 12.417 11C12.2503 10.9167 12.0837 10.9167 11.917 11.0834C11.7503 11.25 11.417 11.75 11.2503 11.9167C11.167 12.0834 11.0003 12.0834 10.8337 12C10.2503 11.75 9.66699 11.4167 9.16699 11C8.75033 10.5834 8.33366 10.0834 8.00033 9.58337C7.91699 9.41671 8.00033 9.25004 8.08366 9.16671C8.16699 9.08337 8.25033 8.91671 8.41699 8.83337C8.50033 8.75004 8.58366 8.58337 8.58366 8.50004C8.66699 8.41671 8.66699 8.25004 8.58366 8.16671C8.50033 8.08337 8.08366 7.08337 7.91699 6.66671C7.83366 6.08337 7.66699 6.08337 7.50033 6.08337C7.41699 6.08337 7.25033 6.08337 7.08366 6.08337C6.91699 6.08337 6.66699 6.25004 6.58366 6.33337C6.08366 6.83337 5.83366 7.41671 5.83366 8.08337C5.91699 8.83337 6.16699 9.58337 6.66699 10.25C7.58366 11.5834 8.75033 12.6667 10.167 13.3334C10.5837 13.5 10.917 13.6667 11.3337 13.75C11.7503 13.9167 12.167 13.9167 12.667 13.8334C13.2503 13.75 13.7503 13.3334 14.0837 12.8334C14.2503 12.5 14.2503 12.1667 14.167 11.8334C14.167 11.8334 14.0003 11.75 13.8337 11.6667ZM15.917 4.08337C12.667 0.833374 7.41699 0.833374 4.16699 4.08337C1.50033 6.75004 1.00033 10.8334 2.83366 14.0834L1.66699 18.3334L6.08366 17.1667C7.33366 17.8334 8.66699 18.1667 10.0003 18.1667C14.5837 18.1667 18.2503 14.5 18.2503 9.91671C18.3337 7.75004 17.417 5.66671 15.917 4.08337ZM13.667 15.75C12.5837 16.4167 11.3337 16.8334 10.0003 16.8334C8.75033 16.8334 7.58366 16.5 6.50033 15.9167L6.25033 15.75L3.66699 16.4167L4.33366 13.9167L4.16699 13.6667C2.16699 10.3334 3.16699 6.16671 6.41699 4.08337C9.66699 2.00004 13.8337 3.08337 15.8337 6.25004C17.8337 9.50004 16.917 13.75 13.667 15.75Z" fill="white"/>
+          </svg> Agende sua consulta
+        </a>
+      </div>
+
+      <div class="contact">
+        <button aria-expanded="false" aria-label="Abrir card" onclick="cardOpen()" class="openCard contact">clique para saber +</button>
+      </div>
+    </div>
+
+    <div class="Card">
+      <header class="headerCard">
+        <h4>Fisioterapia</h4>
+          <button arial-expaded="true" aria-label="Fechar card" onclick="closeCard()" class="closeCard">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L1 11M1 1L11 11" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <svg class="iconCard" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="10" cy="10" r="10" fill="#DCE9E2"/>
+            <path d="M14.2425 6.81818L8.40917 12.6515L5.75766 9.99999" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>       
+      </header> 
+      <img src="./assets/fisioterapia.png" alt="icone de uma coluna vertebral">
+
+      <div class="infoCardExpended">
+        <p>Atende pacientes para prevenção, habilitação e reabilitação, realiza diagnósticos específicos e desenvolve programas de prevenção, promoção de saúde e qualidade de vida.</p>
+        <a class="button" href="https://wa.me/5585985771554?text=Ol%C3%A1%2C+gostaria+de+marcar+uma+consulta++" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.8337 11.6667C13.667 11.5834 12.5837 11.0834 12.417 11C12.2503 10.9167 12.0837 10.9167 11.917 11.0834C11.7503 11.25 11.417 11.75 11.2503 11.9167C11.167 12.0834 11.0003 12.0834 10.8337 12C10.2503 11.75 9.66699 11.4167 9.16699 11C8.75033 10.5834 8.33366 10.0834 8.00033 9.58337C7.91699 9.41671 8.00033 9.25004 8.08366 9.16671C8.16699 9.08337 8.25033 8.91671 8.41699 8.83337C8.50033 8.75004 8.58366 8.58337 8.58366 8.50004C8.66699 8.41671 8.66699 8.25004 8.58366 8.16671C8.50033 8.08337 8.08366 7.08337 7.91699 6.66671C7.83366 6.08337 7.66699 6.08337 7.50033 6.08337C7.41699 6.08337 7.25033 6.08337 7.08366 6.08337C6.91699 6.08337 6.66699 6.25004 6.58366 6.33337C6.08366 6.83337 5.83366 7.41671 5.83366 8.08337C5.91699 8.83337 6.16699 9.58337 6.66699 10.25C7.58366 11.5834 8.75033 12.6667 10.167 13.3334C10.5837 13.5 10.917 13.6667 11.3337 13.75C11.7503 13.9167 12.167 13.9167 12.667 13.8334C13.2503 13.75 13.7503 13.3334 14.0837 12.8334C14.2503 12.5 14.2503 12.1667 14.167 11.8334C14.167 11.8334 14.0003 11.75 13.8337 11.6667ZM15.917 4.08337C12.667 0.833374 7.41699 0.833374 4.16699 4.08337C1.50033 6.75004 1.00033 10.8334 2.83366 14.0834L1.66699 18.3334L6.08366 17.1667C7.33366 17.8334 8.66699 18.1667 10.0003 18.1667C14.5837 18.1667 18.2503 14.5 18.2503 9.91671C18.3337 7.75004 17.417 5.66671 15.917 4.08337ZM13.667 15.75C12.5837 16.4167 11.3337 16.8334 10.0003 16.8334C8.75033 16.8334 7.58366 16.5 6.50033 15.9167L6.25033 15.75L3.66699 16.4167L4.33366 13.9167L4.16699 13.6667C2.16699 10.3334 3.16699 6.16671 6.41699 4.08337C9.66699 2.00004 13.8337 3.08337 15.8337 6.25004C17.8337 9.50004 16.917 13.75 13.667 15.75Z" fill="white"/>
+          </svg> Agende sua consulta
+        </a>
+      </div>
+
+      <div class="contact">
+        <button aria-expanded="false" aria-label="Abrir card" onclick="cardOpen()" class="openCard contact">clique para saber +</button>
+      </div>
+    </div>
+
+    <div class="Card">
+      <header class="headerCard">
+        <h4>Odontologia</h4>
+          <button arial-expaded="true" aria-label="Fechar card" onclick="closeCard()" class="closeCard">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L1 11M1 1L11 11" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <svg class="iconCard" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="10" cy="10" r="10" fill="#DCE9E2"/>
+            <path d="M14.2425 6.81818L8.40917 12.6515L5.75766 9.99999" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>       
+      </header>     
+
+      <img src="./assets/odonto.png" alt="icone de um dente">
+
+      <div class="infoCardExpended">
+        <p>Profissional responsável pelo tratamento da saúde e estética bucal. Ele tem conhecimento técnico sobre os dentes, gengiva, ossos da face, maxilar, mordida e demais áreas que envolvem a boca.</p>
+        <a class="button" href="https://wa.me/5585985771554?text=Ol%C3%A1%2C+gostaria+de+marcar+uma+consulta++" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.8337 11.6667C13.667 11.5834 12.5837 11.0834 12.417 11C12.2503 10.9167 12.0837 10.9167 11.917 11.0834C11.7503 11.25 11.417 11.75 11.2503 11.9167C11.167 12.0834 11.0003 12.0834 10.8337 12C10.2503 11.75 9.66699 11.4167 9.16699 11C8.75033 10.5834 8.33366 10.0834 8.00033 9.58337C7.91699 9.41671 8.00033 9.25004 8.08366 9.16671C8.16699 9.08337 8.25033 8.91671 8.41699 8.83337C8.50033 8.75004 8.58366 8.58337 8.58366 8.50004C8.66699 8.41671 8.66699 8.25004 8.58366 8.16671C8.50033 8.08337 8.08366 7.08337 7.91699 6.66671C7.83366 6.08337 7.66699 6.08337 7.50033 6.08337C7.41699 6.08337 7.25033 6.08337 7.08366 6.08337C6.91699 6.08337 6.66699 6.25004 6.58366 6.33337C6.08366 6.83337 5.83366 7.41671 5.83366 8.08337C5.91699 8.83337 6.16699 9.58337 6.66699 10.25C7.58366 11.5834 8.75033 12.6667 10.167 13.3334C10.5837 13.5 10.917 13.6667 11.3337 13.75C11.7503 13.9167 12.167 13.9167 12.667 13.8334C13.2503 13.75 13.7503 13.3334 14.0837 12.8334C14.2503 12.5 14.2503 12.1667 14.167 11.8334C14.167 11.8334 14.0003 11.75 13.8337 11.6667ZM15.917 4.08337C12.667 0.833374 7.41699 0.833374 4.16699 4.08337C1.50033 6.75004 1.00033 10.8334 2.83366 14.0834L1.66699 18.3334L6.08366 17.1667C7.33366 17.8334 8.66699 18.1667 10.0003 18.1667C14.5837 18.1667 18.2503 14.5 18.2503 9.91671C18.3337 7.75004 17.417 5.66671 15.917 4.08337ZM13.667 15.75C12.5837 16.4167 11.3337 16.8334 10.0003 16.8334C8.75033 16.8334 7.58366 16.5 6.50033 15.9167L6.25033 15.75L3.66699 16.4167L4.33366 13.9167L4.16699 13.6667C2.16699 10.3334 3.16699 6.16671 6.41699 4.08337C9.66699 2.00004 13.8337 3.08337 15.8337 6.25004C17.8337 9.50004 16.917 13.75 13.667 15.75Z" fill="white"/>
+          </svg> Agende sua consulta
+        </a>
+      </div>
+
+      <div class="contact">
+        <button aria-expanded="false" aria-label="Abrir card" onclick="cardOpen()" class="openCard contact">clique para saber +</button>
+      </div>
+    </div>
+  
+  </div>
+</section>
+
+  <section id="about">
+    <div class="about">
+        <div>
+          <h4>Sobre nos</h4>
+          <h2>Entenda quem somos e por que existimos</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt maxime, deleniti atque excepturi tenetur magnam ducimus harum nam, quos in vel dolor ad velit autem enim rerum iure. Libero, maxime Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsum facilis explicabo natus ut accusantium enim in animi reiciendis facere laborum repellat, molestias obcaecati quibusdam optio provident cum aliquid omnis.</p>
+        </div>
+    
+        <div id="photos" >
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/group.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/born.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/doctorborn.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/clinica vertical.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/clinicacentro.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/clinicalado.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+    </div>
+    <div id="convenios">
+        <ul>
+          <li><img src="./assets/logo_unimed.png" alt="logomarca da unimed"></li>
+          <li><img src="./assets/ipm_saude.png" alt="logomarca ipm"></li>
+          <li><img src="./assets/issec.png" alt="logomarca do issec"></li>
+          <li><img src="./assets/bradesco-saude.png" alt="lgomarca bradesco saude"></li>
+        </ul>
+    </div>
+  </section>
+
+  <section id="contacts">
+    <div id="contact">
+      <h2>Entre em contato com a gente!</h2>
+      <p>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="#143965" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#143965" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+         Rua Doutor Costa Araújo, 1210, Fátima</p>
+      <p>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#143965" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M22 6L12 13L2 6" stroke="#143965" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        centroclinica13demaio@hotmail.com
+      </p>
+
+      <p>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <mask id="mask0_2216_16" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="3" width="20" height="21">
+          <path d="M0 3.23633H19.9859V23.9999H0V3.23633Z" fill="white"/>
+          </mask>
+          <g mask="url(#mask0_2216_16)">
+          <path d="M4.85538 3.42947C5.01235 3.51851 5.04586 3.69043 5.11817 3.84559C5.2037 4.02896 5.3157 4.20793 5.41094 4.38866C5.62698 4.79772 5.84303 5.20679 6.05997 5.61585C6.48854 6.42429 6.91711 7.23184 7.3448 8.04027C7.40917 8.16105 7.47355 8.28536 7.48501 8.42025C7.51587 8.78435 6.92328 9.19253 6.64727 9.36268C5.94533 9.79379 5.26631 10.1147 4.78395 10.82C4.709 10.9302 4.63933 11.0483 4.61111 11.1788C4.54321 11.5006 4.85803 11.9449 4.99559 12.2244C5.17725 12.5964 5.37213 12.9605 5.58113 13.3176C6.00088 14.0343 6.47531 14.7202 7 15.3647C8.37743 17.0538 10.1217 18.4617 12.1429 19.3125C12.2822 19.3716 13.1464 18.4547 13.2734 18.3075C13.5961 17.9319 13.8748 17.5228 14.2346 17.1799C14.724 16.7118 15.1261 16.5205 15.7249 16.9348C16.9198 17.7618 18.1393 18.5526 19.3827 19.3054C21.0926 20.3422 18.6102 22.9712 17.5035 23.4428C15.0661 24.4822 12.1808 23.5821 9.98677 22.3796C5.55379 19.9508 2.12169 15.7711 0.611995 10.9646C0.25397 9.82376 -0.00176162 8.62742 0.116404 7.43725C0.291007 5.68286 1.46208 4.1612 3.15168 3.60403C3.60318 3.45504 4.07848 3.37569 4.55467 3.37305C4.6455 3.37305 4.73898 3.37569 4.82187 3.41272C4.83333 3.41801 4.8448 3.4233 4.85538 3.42947Z" fill="#143965"/>
+          </g>
+          <mask id="mask1_2216_16" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="11" y="0" width="13" height="13">
+          <path d="M11.821 0H24V12.3839H11.821V0Z" fill="white"/>
+          </mask>
+          <g mask="url(#mask1_2216_16)">
+          <path d="M22.9621 7.103C22.3783 5.80703 21.5749 4.63185 20.5741 3.61007C19.5741 2.58829 18.4144 1.7587 17.127 1.14333C15.8016 0.51034 14.3836 0.12684 12.9136 0.00341548C12.6032 -0.0221511 12.3069 0.0712992 12.0996 0.260845C11.94 0.407192 11.8527 0.596737 11.8527 0.794217C11.8527 1.23678 12.2557 1.61852 12.7716 1.6626C17.9197 2.09371 22.0326 6.29015 22.328 11.4238V11.4246C22.358 11.9377 22.731 12.3486 23.1764 12.3609C23.1958 12.3609 23.2143 12.3609 23.2337 12.36C23.4118 12.3494 23.582 12.2683 23.7187 12.1282C23.9144 11.9271 24.0159 11.6353 23.9973 11.3259C23.9118 9.85978 23.5635 8.43863 22.9621 7.103Z" fill="#143965"/>
+          </g>
+          <path d="M17.8174 6.28326C17.022 5.47042 16.1014 4.80833 15.0794 4.31463C14.0282 3.80682 12.903 3.49385 11.7354 3.38542C11.4462 3.35809 11.1693 3.44272 10.9771 3.61728C10.8324 3.74864 10.7522 3.91967 10.7531 4.09687L10.7504 4.25027V4.25292C10.7513 4.4548 10.8421 4.64876 11.007 4.79687C11.1596 4.9344 11.3607 5.02168 11.5767 5.04284C15.5511 5.41311 18.6376 8.55957 18.8986 12.5242C18.9206 12.7384 18.9982 12.9429 19.1323 13.0981C19.2769 13.2665 19.47 13.3617 19.6728 13.367L19.8298 13.3696C19.8465 13.3696 19.8642 13.3696 19.8809 13.3687C20.0414 13.359 20.1949 13.2859 20.3174 13.1589C20.4982 12.972 20.5908 12.6987 20.5705 12.4104C20.492 11.2458 20.2063 10.1182 19.724 9.05856C19.254 8.02972 18.6129 7.0961 17.8174 6.28326Z" fill="#143965"/>
+          <path d="M16.172 10.9416C15.8545 10.2637 15.4277 9.6483 14.9013 9.1114C14.3757 8.5745 13.7681 8.13282 13.097 7.79957C12.4057 7.45751 11.6667 7.23887 10.8986 7.15071C10.6402 7.12073 10.3854 7.19302 10.217 7.34466C10.0944 7.4531 10.0282 7.59327 10.0282 7.7405L10.0229 8.13634V8.13987C10.0247 8.30914 10.1006 8.47135 10.2381 8.59566C10.3625 8.70939 10.5291 8.78344 10.7055 8.8046C13.0432 9.07261 14.8924 10.961 15.1005 13.2946H15.1014C15.1173 13.4709 15.187 13.6376 15.2981 13.7645C15.4198 13.9047 15.5811 13.9849 15.7513 13.9902L16.1526 13.9955C16.1667 13.9955 16.1808 13.9955 16.1949 13.9946C16.3272 13.9867 16.4533 13.9259 16.5547 13.8183C16.7108 13.6543 16.7901 13.4031 16.7672 13.1456C16.6984 12.3786 16.4983 11.6372 16.172 10.9416Z" fill="#143965"/>
+          </svg>
+          
+          (85) 3879-2205 | 3878-2204 | 3276-4655
+      </p>
+
+      <a class="button" href=https://wa.me/5585985771554?text=Ol%C3%A1%2C+gostaria+de+marcar+uma+consulta++ target="_blank">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.8337 11.6667C13.667 11.5834 12.5837 11.0834 12.417 11C12.2503 10.9167 12.0837 10.9167 11.917 11.0834C11.7503 11.25 11.417 11.75 11.2503 11.9167C11.167 12.0834 11.0003 12.0834 10.8337 12C10.2503 11.75 9.66699 11.4167 9.16699 11C8.75033 10.5834 8.33366 10.0834 8.00033 9.58337C7.91699 9.41671 8.00033 9.25004 8.08366 9.16671C8.16699 9.08337 8.25033 8.91671 8.41699 8.83337C8.50033 8.75004 8.58366 8.58337 8.58366 8.50004C8.66699 8.41671 8.66699 8.25004 8.58366 8.16671C8.50033 8.08337 8.08366 7.08337 7.91699 6.66671C7.83366 6.08337 7.66699 6.08337 7.50033 6.08337C7.41699 6.08337 7.25033 6.08337 7.08366 6.08337C6.91699 6.08337 6.66699 6.25004 6.58366 6.33337C6.08366 6.83337 5.83366 7.41671 5.83366 8.08337C5.91699 8.83337 6.16699 9.58337 6.66699 10.25C7.58366 11.5834 8.75033 12.6667 10.167 13.3334C10.5837 13.5 10.917 13.6667 11.3337 13.75C11.7503 13.9167 12.167 13.9167 12.667 13.8334C13.2503 13.75 13.7503 13.3334 14.0837 12.8334C14.2503 12.5 14.2503 12.1667 14.167 11.8334C14.167 11.8334 14.0003 11.75 13.8337 11.6667ZM15.917 4.08337C12.667 0.833374 7.41699 0.833374 4.16699 4.08337C1.50033 6.75004 1.00033 10.8334 2.83366 14.0834L1.66699 18.3334L6.08366 17.1667C7.33366 17.8334 8.66699 18.1667 10.0003 18.1667C14.5837 18.1667 18.2503 14.5 18.2503 9.91671C18.3337 7.75004 17.417 5.66671 15.917 4.08337ZM13.667 15.75C12.5837 16.4167 11.3337 16.8334 10.0003 16.8334C8.75033 16.8334 7.58366 16.5 6.50033 15.9167L6.25033 15.75L3.66699 16.4167L4.33366 13.9167L4.16699 13.6667C2.16699 10.3334 3.16699 6.16671 6.41699 4.08337C9.66699 2.00004 13.8337 3.08337 15.8337 6.25004C17.8337 9.50004 16.917 13.75 13.667 15.75Z" fill="white"/>
+        </svg> Agende sua consulta
+      </a>
+    </div>
+    
+    <div class="form">
+      <form action="https://formsubmit.co/saicon.vd@hotmail.com" method="post" id="form">
+        <input type="hidden" name="_next" value="https://freirelf.github.io/Centro-Clinica/formSucess.html">
+      
+        <input type="hidden" name="_autoresponse" value="Recebemos suas informações, obrigado pelo contato, logo retornaremos!">
+        <fieldset >
+          <div class="fieldset-wrapper">
+            <legend>Olá, conte-nos como podemos ajuda-lo(a)</legend>
+            <div class="input-wrapper">
+              <label for="eventName">Nome </label>
+              <input type="text" name="name" id="eventName" required minlength="5"/>
+            </div>
+            <div class="input-wrapper">
+              <label for="eventEmail">Email <span>(digite um email válido)</span></label>
+              <input type="text" name="email" id="eventEmail" required/>
+            </div>
+            <div class="input-wrapper">
+              <label for="event-whatsapp">Whatsapp para contato <span>(somente números)</span></label>
+                  <input type="number" name="contato" id="event-whatsapp" required />
+            </div>
+      
+            <div class="input-wrapper">
+              <label for="event-info">Informações (digite aqui sua dúvida) </label>
+              <textarea class="textarea" name="info" id="event-info" cols="30" rows="10" required></textarea>
+            </div>
+          </div>
+        </fieldset>
+        <div>
+          <input class="buttonForm" type="submit" form="form" value="Enviar"/>
+        </div>
+      </form>
+    </div>
+
+  </section>
+
+  
+  <footer>
+    <header>
+      <img src="./assets/svg/logo.svg" alt="Logo">
+        <svg  class="borderBottom" width="170" height="60" viewBox="0 0 137 34" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+          <path d="M6.84293 15.052C5.4189 15.052 4.19598 14.7525 3.17416 14.1534C2.15506 13.5516 1.37103 12.7132 0.820716 11.6394C0.273119 10.5629 0 9.31792 0 7.90579C0 6.49099 0.273119 5.242 0.820716 4.16151C1.37103 3.07835 2.15506 2.23321 3.17416 1.6261C4.19598 1.01632 5.4189 0.711426 6.84293 0.711426C8.53056 0.711426 9.91518 1.12597 10.9954 1.95239C12.0743 2.77613 12.7483 3.93552 13.0173 5.42922H10.1801C10.0062 4.67769 9.63255 4.08663 9.06049 3.65871C8.49115 3.22812 7.73702 3.01148 6.79945 3.01148C5.49771 3.01148 4.47861 3.44876 3.73942 4.32198C3.00295 5.19253 2.63608 6.38668 2.63608 7.90579C2.63608 9.42223 3.00295 10.6124 3.73942 11.4789C4.47861 12.3454 5.49771 12.7787 6.79945 12.7787C7.73702 12.7787 8.49115 12.5781 9.06049 12.1743C9.63255 11.7718 10.0062 11.2141 10.1801 10.5H13.0173C12.7483 11.9269 12.0743 13.0435 10.9954 13.8485C9.91518 14.6508 8.53056 15.052 6.84293 15.052Z" fill="#fff"/>
+          <path d="M20.0789 15.0521C19.0707 15.0521 18.178 14.8409 17.3994 14.421C16.6235 13.9971 16.0134 13.4033 15.5677 12.6398C15.1248 11.8735 14.9046 10.9869 14.9046 9.98132C14.9046 8.96501 15.122 8.06104 15.5569 7.26939C15.9944 6.47774 16.6004 5.86127 17.3722 5.41864C18.144 4.97735 19.0531 4.75537 20.1007 4.75537C21.079 4.75537 21.9432 4.96799 22.6933 5.3919C23.4461 5.81313 24.0331 6.39082 24.4543 7.12497C24.8782 7.85644 25.0902 8.67082 25.0902 9.56945C25.0902 9.71253 25.0861 9.86364 25.0793 10.0241C25.0712 10.1819 25.063 10.345 25.0522 10.5162H17.4646C17.519 11.2838 17.7907 11.8855 18.2799 12.3242C18.7691 12.7601 19.3615 12.9767 20.0572 12.9767C20.5817 12.9767 21.022 12.8617 21.378 12.6291C21.7326 12.3977 21.9976 12.0968 22.1715 11.7251H24.7913C24.6024 12.3456 24.2885 12.9112 23.851 13.4207C23.4162 13.9315 22.8794 14.33 22.2422 14.6189C21.6035 14.9077 20.8834 15.0521 20.0789 15.0521ZM20.1007 6.81472C19.4702 6.81472 18.9117 6.9899 18.4266 7.33892C17.9443 7.68928 17.6358 8.22017 17.5027 8.93292H22.4759C22.4351 8.28837 22.1932 7.77487 21.7476 7.39241C21.3046 7.00729 20.7556 6.81472 20.1007 6.81472Z" fill="#fff"/>
+          <path d="M27.2626 14.8168V4.99073H29.5345L29.7356 6.65426C30.0427 6.07389 30.4884 5.61121 31.0727 5.26887C31.6556 4.92654 32.3445 4.75537 33.138 4.75537C34.3732 4.75537 35.3311 5.13916 36.0133 5.9054C36.6981 6.66897 37.0405 7.79091 37.0405 9.2699V14.8168H34.4642V9.51061C34.4642 8.66547 34.2903 8.01824 33.9425 7.56893C33.5946 7.11962 33.0511 6.89496 32.3119 6.89496C31.5863 6.89496 30.9925 7.14636 30.5291 7.64916C30.0685 8.14929 29.8389 8.84733 29.8389 9.74596V14.8168H27.2626Z" fill="#fff"/>
+          <path d="M43.9416 14.8166C42.894 14.8166 42.0556 14.5679 41.4251 14.0678C40.7946 13.565 40.4794 12.6717 40.4794 11.3879V7.11412H38.7673V4.99058H40.4794L40.7838 2.35889H43.0557V4.99058H45.7515V7.11412H43.0557V11.4093C43.0557 11.8841 43.1589 12.2104 43.3655 12.3882C43.5747 12.5674 43.9362 12.6557 44.4471 12.6557H45.6918V14.8166H43.9416Z" fill="#fff"/>
+          <path d="M47.9662 14.8168V4.99073H50.2599L50.499 6.83612C50.8605 6.20227 51.3537 5.69679 51.9774 5.32236C52.6038 4.94526 53.3389 4.75537 54.1841 4.75537V7.42986H53.4612C52.8959 7.42986 52.3918 7.51544 51.9502 7.68661C51.5072 7.85777 51.1621 8.15598 50.9121 8.57989C50.6648 9.00112 50.5425 9.58817 50.5425 10.3397V14.8168H47.9662Z" fill="#fff"/>
+          <path d="M60.7222 15.0521C59.7547 15.0521 58.8851 14.8342 58.1133 14.3996C57.3442 13.965 56.7341 13.3619 56.2816 12.5916C55.8319 11.8187 55.6077 10.9227 55.6077 9.90643C55.6077 8.89013 55.8359 7.99551 56.2925 7.22125C56.7491 6.44832 57.3632 5.84389 58.135 5.40795C58.9068 4.97334 59.7765 4.75537 60.7439 4.75537C61.6965 4.75537 62.5566 4.97334 63.3257 5.40795C64.0975 5.84389 64.7076 6.44832 65.1573 7.22125C65.6098 7.99551 65.8367 8.89013 65.8367 9.90643C65.8367 10.9227 65.6098 11.8187 65.1573 12.5916C64.7076 13.3619 64.0934 13.965 63.3148 14.3996C62.5389 14.8342 61.6747 15.0521 60.7222 15.0521ZM60.7222 12.8537C61.3921 12.8537 61.975 12.6077 62.4723 12.1156C62.9683 11.6208 63.217 10.884 63.217 9.90643C63.217 8.93024 62.9683 8.19342 62.4723 7.69731C61.975 7.20253 61.3989 6.9538 60.7439 6.9538C60.0591 6.9538 59.4721 7.20253 58.9829 7.69731C58.4938 8.19342 58.2492 8.93024 58.2492 9.90643C58.2492 10.884 58.4938 11.6208 58.9829 12.1156C59.4721 12.6077 60.0509 12.8537 60.7222 12.8537Z" fill="#fff"/>
+          <path d="M79.3544 15.052C77.9304 15.052 76.7075 14.7525 75.6857 14.1534C74.6666 13.5516 73.8825 12.7132 73.3322 11.6394C72.7846 10.5629 72.5115 9.31792 72.5115 7.90579C72.5115 6.49099 72.7846 5.242 73.3322 4.16151C73.8825 3.07835 74.6666 2.23321 75.6857 1.6261C76.7075 1.01632 77.9304 0.711426 79.3544 0.711426C81.0421 0.711426 82.4267 1.12597 83.5069 1.95239C84.5858 2.77613 85.2598 3.93552 85.5288 5.42922H82.6916C82.5177 4.67769 82.144 4.08663 81.572 3.65871C81.0027 3.22812 80.2485 3.01148 79.3109 3.01148C78.0092 3.01148 76.9901 3.44876 76.2509 4.32198C75.5145 5.19253 75.1476 6.38668 75.1476 7.90579C75.1476 9.42223 75.5145 10.6124 76.2509 11.4789C76.9901 12.3454 78.0092 12.7787 79.3109 12.7787C80.2485 12.7787 81.0027 12.5781 81.572 12.1743C82.144 11.7718 82.5177 11.2141 82.6916 10.5H85.5288C85.2598 11.9269 84.5858 13.0435 83.5069 13.8485C82.4267 14.6508 81.0421 15.052 79.3544 15.052Z" fill="#fff"/>
+          <path d="M87.7423 14.8168V0.556396H90.3185V14.8168H87.7423Z" fill="#fff"/>
+          <path d="M92.9534 14.8166V4.99059H95.5296V14.8166H92.9534ZM93.573 4.19894V2.41773L98.1222 0V2.05935L93.573 4.19894Z" fill="#fff"/>
+          <path d="M98.1645 14.8168V4.99073H100.436L100.637 6.65426C100.945 6.07389 101.39 5.61121 101.975 5.26887C102.557 4.92654 103.246 4.75537 104.04 4.75537C105.275 4.75537 106.233 5.13916 106.915 5.9054C107.6 6.66897 107.942 7.79091 107.942 9.2699V14.8168H105.366V9.51061C105.366 8.66547 105.192 8.01824 104.844 7.56893C104.496 7.11962 103.953 6.89496 103.214 6.89496C102.488 6.89496 101.894 7.14636 101.431 7.64916C100.97 8.14929 100.741 8.84733 100.741 9.74596V14.8168H98.1645Z" fill="#fff"/>
+          <path d="M111.784 3.46624C111.316 3.46624 110.93 3.32984 110.626 3.05437C110.324 2.77622 110.175 2.42586 110.175 2.00062C110.175 1.58072 110.324 1.23438 110.626 0.962918C110.93 0.692795 111.316 0.556396 111.784 0.556396C112.254 0.556396 112.64 0.692795 112.941 0.962918C113.241 1.23438 113.392 1.58072 113.392 2.00062C113.392 2.42586 113.241 2.77622 112.941 3.05437C112.64 3.32984 112.254 3.46624 111.784 3.46624ZM110.495 14.8168V4.99069H113.072V14.8168H110.495Z" fill="#fff"/>
+          <path d="M120.661 15.0521C119.639 15.0521 118.739 14.8342 117.96 14.3996C117.184 13.965 116.57 13.3592 116.117 12.5809C115.668 11.8 115.443 10.9094 115.443 9.90643C115.443 8.90082 115.668 8.01022 116.117 7.23194C116.57 6.45099 117.184 5.84389 117.96 5.40795C118.739 4.97334 119.639 4.75537 120.661 4.75537C121.933 4.75537 123.005 5.08166 123.879 5.73423C124.751 6.38681 125.308 7.28945 125.548 8.44081H122.83C122.695 7.96342 122.43 7.59033 122.036 7.32288C121.641 7.05275 121.175 6.91636 120.64 6.91636C119.929 6.91636 119.326 7.18113 118.83 7.708C118.332 8.23621 118.085 8.96902 118.085 9.90643C118.085 10.8452 118.332 11.578 118.83 12.1049C119.326 12.6331 119.929 12.8965 120.64 12.8965C121.175 12.8965 121.641 12.7655 122.036 12.5007C122.43 12.2372 122.695 11.8615 122.83 11.372H125.548C125.308 12.482 124.751 13.3726 123.879 14.0465C123.005 14.7178 121.933 15.0521 120.661 15.0521Z" fill="#fff"/>
+          <path d="M131.282 15.0521C130.423 15.0521 129.718 14.9184 129.168 14.651C128.616 14.3808 128.207 14.0198 127.939 13.5705C127.67 13.1212 127.537 12.6264 127.537 12.0835C127.537 11.1715 127.899 10.4306 128.624 9.86364C129.349 9.29665 130.436 9.01315 131.885 9.01315H134.424V8.7778C134.424 8.10383 134.228 7.60905 133.837 7.29078C133.448 6.97386 132.967 6.81472 132.391 6.81472C131.865 6.81472 131.407 6.93775 131.016 7.1838C130.627 7.42718 130.387 7.78556 130.293 8.25895H127.782C127.847 7.5462 128.089 6.92572 128.51 6.39751C128.934 5.87063 129.48 5.46545 130.152 5.18329C130.826 4.89846 131.577 4.75537 132.407 4.75537C133.831 4.75537 134.952 5.10573 135.772 5.80377C136.59 6.50315 137 7.49404 137 8.7778V14.8168H134.804L134.56 13.2335C134.266 13.7617 133.853 14.1963 133.32 14.5386C132.79 14.881 132.111 15.0521 131.282 15.0521ZM131.864 13.073C132.603 13.073 133.176 12.8363 133.587 12.3616C133.996 11.8882 134.252 11.2998 134.358 10.5964H132.168C131.483 10.5964 130.991 10.7195 130.695 10.9655C130.402 11.2089 130.255 11.5084 130.255 11.8642C130.255 12.2493 130.402 12.5475 130.695 12.7574C130.991 12.9687 131.381 13.073 131.864 13.073Z" fill="#fff"/>
+          <path d="M31.4883 33.8235V25.6129L29.7545 26.014V24.5591L32.3036 23.4465H33.4939V33.8235H31.4883Z" fill="#fff"/>
+          <path d="M38.9891 34.0001C38.2961 34.0001 37.6683 33.8784 37.1031 33.6363C36.5405 33.3943 36.0894 33.0212 35.7497 32.5184C35.4086 32.0156 35.2279 31.3831 35.2062 30.6195H37.1085C37.1153 31.1263 37.2824 31.5502 37.6085 31.8926C37.9346 32.2322 38.3939 32.4007 38.9891 32.4007C39.5503 32.4007 39.981 32.2483 40.2827 31.9407C40.5829 31.6345 40.7338 31.2493 40.7338 30.7853C40.7338 30.2437 40.5354 29.8319 40.1413 29.5497C39.7459 29.2689 39.2364 29.1271 38.614 29.1271H37.8314V27.5706H38.6249C39.1385 27.5706 39.5666 27.4529 39.9076 27.2176C40.2473 26.9795 40.4185 26.6265 40.4185 26.1585C40.4185 25.7733 40.2894 25.4658 40.0326 25.2331C39.7785 25.0017 39.4252 24.8854 38.9728 24.8854C38.4795 24.8854 38.095 25.0298 37.8205 25.3187C37.5447 25.6048 37.3925 25.9539 37.3639 26.3671H35.4779C35.5173 25.4083 35.8557 24.6527 36.4943 24.0991C37.1316 23.5468 37.9577 23.27 38.9728 23.27C39.697 23.27 40.3071 23.3971 40.8044 23.6498C41.3004 23.8999 41.6754 24.2328 41.9295 24.6501C42.1863 25.0646 42.3154 25.5219 42.3154 26.0247C42.3154 26.6105 42.1524 27.1026 41.8263 27.5011C41.5001 27.9009 41.0952 28.1697 40.6142 28.3088C41.208 28.4264 41.6904 28.7126 42.06 29.1646C42.4323 29.6139 42.6198 30.1796 42.6198 30.8602C42.6198 31.4352 42.4785 31.9594 42.1958 32.4328C41.9159 32.9075 41.5069 33.2873 40.9675 33.5721C40.4308 33.857 39.7717 34.0001 38.9891 34.0001Z" fill="#fff"/>
+          <path d="M51.489 34.0001C50.7851 34.0001 50.1573 33.8316 49.6029 33.4973C49.0513 33.1629 48.6151 32.7043 48.2931 32.1226C47.9737 31.5382 47.8148 30.8749 47.8148 30.1328C47.8148 29.3919 47.9737 28.7313 48.2931 28.1536C48.6151 27.5759 49.0513 27.1213 49.6029 26.7896C50.1573 26.458 50.7851 26.2922 51.489 26.2922C52.0501 26.2922 52.5407 26.3978 52.9619 26.6078C53.3858 26.8151 53.7283 27.1052 53.9892 27.4797V23.1523H55.9187V33.8235H54.2011L53.9892 32.7698C53.7459 33.0988 53.4253 33.3849 53.0271 33.631C52.6317 33.877 52.1194 34.0001 51.489 34.0001ZM51.8966 32.3419C52.5189 32.3419 53.0285 32.1373 53.4239 31.7267C53.8179 31.3175 54.0163 30.7907 54.0163 30.1488C54.0163 29.5069 53.8179 28.9814 53.4239 28.5709C53.0285 28.1617 52.5189 27.9557 51.8966 27.9557C51.2838 27.9557 50.7769 28.159 50.3747 28.5655C49.9725 28.9693 49.7714 29.4909 49.7714 30.1328C49.7714 30.7746 49.9725 31.3042 50.3747 31.7214C50.7769 32.1359 51.2838 32.3419 51.8966 32.3419Z" fill="#fff"/>
+          <path d="M61.5048 34.0001C60.7507 34.0001 60.0821 33.8423 59.4992 33.5294C58.919 33.2125 58.4624 32.7672 58.1295 32.1922C57.7993 31.6185 57.6349 30.9565 57.6349 30.2077C57.6349 29.4481 57.798 28.7728 58.1241 28.1804C58.4502 27.5854 58.9013 27.1213 59.4775 26.7897C60.0563 26.4581 60.7384 26.2922 61.5211 26.2922C62.2521 26.2922 62.8989 26.4514 63.4615 26.7683C64.0226 27.0866 64.4615 27.5198 64.7768 28.0681C65.0947 28.6137 65.2551 29.2235 65.2551 29.8974C65.2551 30.0044 65.251 30.1194 65.2442 30.2398C65.2401 30.3575 65.2333 30.4805 65.2225 30.6089H59.5481C59.5875 31.1799 59.79 31.6292 60.1569 31.9568C60.5224 32.2817 60.9667 32.4436 61.4885 32.4436C61.8798 32.4436 62.2073 32.358 62.4723 32.1868C62.7399 32.013 62.9397 31.7883 63.0701 31.5128H65.0268C64.8882 31.9769 64.6545 32.3994 64.3257 32.7805C63.9995 33.159 63.5973 33.4572 63.119 33.6738C62.6435 33.8904 62.1054 34.0001 61.5048 34.0001ZM61.5211 27.8381C61.0455 27.8381 60.627 27.9691 60.2656 28.2286C59.9068 28.4893 59.6758 28.8865 59.5753 29.4214H63.2984C63.2658 28.9373 63.0824 28.5522 62.7494 28.266C62.4193 27.9812 62.0103 27.8381 61.5211 27.8381Z" fill="#fff"/>
+          <path d="M70.5059 33.8235V23.4465H72.7996L76.1586 30.0311L79.4686 23.4465H81.7568V33.8235H79.8328V26.6666L76.8923 32.3419H75.3705L72.4354 26.6666V33.8235H70.5059Z" fill="#fff"/>
+          <path d="M86.3381 34.0001C85.6968 34.0001 85.1696 33.8998 84.7565 33.7006C84.3434 33.4973 84.0363 33.2285 83.8379 32.8929C83.6382 32.5545 83.539 32.1841 83.539 31.7803C83.539 31.0956 83.808 30.542 84.3488 30.1168C84.8924 29.6928 85.7049 29.4802 86.7892 29.4802H88.6861V29.3037C88.6861 28.8009 88.5407 28.4318 88.2513 28.1965C87.9605 27.9584 87.5991 27.8381 87.1643 27.8381C86.7729 27.8381 86.4319 27.929 86.1425 28.1109C85.8517 28.2928 85.671 28.5629 85.5989 28.9186H83.7184C83.7686 28.3837 83.9521 27.9183 84.2673 27.5225C84.5826 27.1267 84.9902 26.8245 85.4902 26.6132C85.993 26.3992 86.5569 26.2922 87.1806 26.2922C88.2459 26.2922 89.0843 26.5543 89.6971 27.0785C90.3085 27.6027 90.6156 28.3449 90.6156 29.3037V33.8236H88.9742L88.7948 32.6361C88.5734 33.0319 88.2635 33.3582 87.8654 33.615C87.47 33.8717 86.9605 34.0001 86.3381 34.0001ZM86.7729 32.5184C87.3273 32.5184 87.7567 32.3419 88.0611 31.9889C88.3682 31.6332 88.5625 31.1919 88.6427 30.6677H87.0012C86.4903 30.6677 86.1234 30.7586 85.9033 30.9405C85.6818 31.1224 85.5718 31.347 85.5718 31.6145C85.5718 31.9006 85.6818 32.1226 85.9033 32.2831C86.1234 32.4409 86.4142 32.5184 86.7729 32.5184Z" fill="#fff"/>
+          <path d="M93.4905 25.3294C93.1386 25.3294 92.8505 25.2264 92.6263 25.0191C92.4007 24.8132 92.2893 24.5511 92.2893 24.2328C92.2893 23.9159 92.4007 23.6578 92.6263 23.4572C92.8505 23.254 93.1386 23.1523 93.4905 23.1523C93.8411 23.1523 94.1291 23.254 94.3547 23.4572C94.583 23.6578 94.6971 23.9159 94.6971 24.2328C94.6971 24.5511 94.583 24.8132 94.3547 25.0191C94.1291 25.2264 93.8411 25.3294 93.4905 25.3294ZM92.5285 33.8235V26.4741H94.458V33.8235H92.5285Z" fill="#fff"/>
+          <path d="M100.061 34.0001C99.3355 34.0001 98.6832 33.837 98.1044 33.5133C97.5282 33.1857 97.0717 32.7324 96.7347 32.1547C96.4004 31.577 96.2347 30.9084 96.2347 30.1488C96.2347 29.3866 96.4045 28.7153 96.7456 28.1376C97.0853 27.5599 97.5446 27.1093 98.1207 26.7843C98.6995 26.4567 99.3504 26.2922 100.072 26.2922C100.785 26.2922 101.431 26.4567 102.007 26.7843C102.586 27.1093 103.042 27.5599 103.377 28.1376C103.714 28.7153 103.882 29.3866 103.882 30.1488C103.882 30.9084 103.714 31.577 103.377 32.1547C103.042 32.7324 102.584 33.1857 102.001 33.5133C101.417 33.837 100.77 34.0001 100.061 34.0001ZM100.061 32.358C100.561 32.358 100.996 32.1734 101.366 31.8017C101.738 31.4313 101.925 30.8803 101.925 30.1488C101.925 29.4187 101.738 28.8678 101.366 28.496C100.996 28.1256 100.564 27.9397 100.072 27.9397C99.561 27.9397 99.1221 28.1256 98.7566 28.496C98.3897 28.8678 98.2076 29.4187 98.2076 30.1488C98.2076 30.8803 98.3897 31.4313 98.7566 31.8017C99.1221 32.1734 99.5569 32.358 100.061 32.358Z" fill="#fff"/>
+        </svg>
+        <p>Todos os direitos reservados.</p>
+    </header>
+    <div class="foo">
+      
+      <ul class="socialLinksFooter">
+        <li>
+          <a class="contactFooter" href="https://www.google.com/maps/place/R.+Dr+Costa+Ara%C3%BAjo,+1210+-+F%C3%A1tima,+Fortaleza+-+CE,+60040-630/@-3.7463859,-38.5349016,17z/data=!3m1!4b1!4m6!3m5!1s0x7c7491954c5443b:0x5fcc0d66410c719e!8m2!3d-3.7463913!4d-38.5323267!16s%2Fg%2F11c4s21_04" target="_blank">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Rua Doutor Cost Araújo, 1210, Fátima.
+          </a>
+        </li>
+        <li>
+          <a class="contactFooter" href="https://wa.me/5585985771554?text=Ol%C3%A1%2C+gostaria+de+marcar+uma+consulta+" target="_blank">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.6 14.0001C16.4 13.9001 15.1 13.3001 14.9 13.2001C14.7 13.1001 14.5 13.1001 14.3 13.3001C14.1 13.5001 13.7 14.1001 13.5 14.3001C13.4 14.5001 13.2 14.5001 13 14.4001C12.3 14.1001 11.6 13.7001 11 13.2001C10.5 12.7001 10 12.1001 9.6 11.5001C9.5 11.3001 9.6 11.1001 9.7 11.0001C9.8 10.9001 9.9 10.7001 10.1 10.6001C10.2 10.5001 10.3 10.3001 10.3 10.2001C10.4 10.1001 10.4 9.9001 10.3 9.8001C10.2 9.7001 9.7 8.5001 9.5 8.0001C9.4 7.3001 9.2 7.3001 9 7.3001C8.9 7.3001 8.7 7.3001 8.5 7.3001C8.3 7.3001 8 7.5001 7.9 7.6001C7.3 8.2001 7 8.9001 7 9.7001C7.1 10.6001 7.4 11.5001 8 12.3001C9.1 13.9001 10.5 15.2001 12.2 16.0001C12.7 16.2001 13.1 16.4001 13.6 16.5001C14.1 16.7001 14.6 16.7001 15.2 16.6001C15.9 16.5001 16.5 16.0001 16.9 15.4001C17.1 15.0001 17.1 14.6001 17 14.2001C17 14.2001 16.8 14.1001 16.6 14.0001ZM19.1 4.9001C15.2 1.0001 8.9 1.0001 5 4.9001C1.8 8.1001 1.2 13.0001 3.4 16.9001L2 22.0001L7.3 20.6001C8.8 21.4001 10.4 21.8001 12 21.8001C17.5 21.8001 21.9 17.4001 21.9 11.9001C22 9.3001 20.9 6.8001 19.1 4.9001ZM16.4 18.9001C15.1 19.7001 13.6 20.2001 12 20.2001C10.5 20.2001 9.1 19.8001 7.8 19.1001L7.5 18.9001L4.4 19.7001L5.2 16.7001L5 16.4001C2.6 12.4001 3.8 7.4001 7.7 4.9001C11.6 2.4001 16.6 3.7001 19 7.5001C21.4 11.4001 20.3 16.5001 16.4 18.9001Z" fill="white"/>
+              </svg>
+              (85) 98577-1554 | (85) 981098431
+          </a>
+        </li>
+        <li>
+          <a class="contactFooter" href="#contact">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_2216_17" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="3" width="20" height="21">
+              <path d="M0 3.23633H19.9859V23.9999H0V3.23633Z" fill="white"/>
+              </mask>
+              <g mask="url(#mask0_2216_17)">
+              <path d="M4.85538 3.42947C5.01235 3.51851 5.04586 3.69043 5.11817 3.84559C5.2037 4.02896 5.3157 4.20793 5.41094 4.38866C5.62698 4.79772 5.84303 5.20679 6.05997 5.61585C6.48854 6.42429 6.91711 7.23184 7.3448 8.04027C7.40917 8.16105 7.47355 8.28536 7.48501 8.42025C7.51587 8.78435 6.92328 9.19253 6.64727 9.36268C5.94533 9.79379 5.26631 10.1147 4.78395 10.82C4.709 10.9302 4.63933 11.0483 4.61111 11.1788C4.54321 11.5006 4.85803 11.9449 4.99559 12.2244C5.17725 12.5964 5.37213 12.9605 5.58113 13.3176C6.00088 14.0343 6.47531 14.7202 7 15.3647C8.37743 17.0538 10.1217 18.4617 12.1429 19.3125C12.2822 19.3716 13.1464 18.4547 13.2734 18.3075C13.5961 17.9319 13.8748 17.5228 14.2346 17.1799C14.724 16.7118 15.1261 16.5205 15.7249 16.9348C16.9198 17.7618 18.1393 18.5526 19.3827 19.3054C21.0926 20.3422 18.6102 22.9712 17.5035 23.4428C15.0661 24.4822 12.1808 23.5821 9.98677 22.3796C5.55379 19.9508 2.12169 15.7711 0.611995 10.9646C0.25397 9.82376 -0.00176162 8.62742 0.116404 7.43725C0.291007 5.68286 1.46208 4.1612 3.15168 3.60403C3.60318 3.45504 4.07848 3.37569 4.55467 3.37305C4.6455 3.37305 4.73898 3.37569 4.82187 3.41272C4.83333 3.41801 4.8448 3.4233 4.85538 3.42947Z" fill="white"/>
+              </g>
+              <mask id="mask1_2216_17" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="11" y="0" width="13" height="13">
+              <path d="M11.821 0H24V12.3839H11.821V0Z" fill="white"/>
+              </mask>
+              <g mask="url(#mask1_2216_17)">
+              <path d="M22.9621 7.103C22.3783 5.80703 21.5749 4.63185 20.5741 3.61007C19.5741 2.58829 18.4144 1.7587 17.127 1.14333C15.8016 0.51034 14.3836 0.12684 12.9136 0.00341548C12.6032 -0.0221511 12.3069 0.0712992 12.0996 0.260845C11.94 0.407192 11.8527 0.596737 11.8527 0.794217C11.8527 1.23678 12.2557 1.61852 12.7716 1.6626C17.9197 2.09371 22.0326 6.29015 22.328 11.4238V11.4246C22.358 11.9377 22.731 12.3486 23.1764 12.3609C23.1958 12.3609 23.2143 12.3609 23.2337 12.36C23.4118 12.3494 23.582 12.2683 23.7187 12.1282C23.9144 11.9271 24.0159 11.6353 23.9973 11.3259C23.9118 9.85978 23.5635 8.43863 22.9621 7.103Z" fill="white"/>
+              </g>
+              <path d="M17.8174 6.28326C17.022 5.47042 16.1014 4.80833 15.0794 4.31463C14.0282 3.80682 12.903 3.49385 11.7354 3.38542C11.4462 3.35809 11.1693 3.44272 10.9771 3.61728C10.8324 3.74864 10.7522 3.91967 10.7531 4.09687L10.7504 4.25027V4.25292C10.7513 4.4548 10.8421 4.64876 11.007 4.79687C11.1596 4.9344 11.3607 5.02168 11.5767 5.04284C15.5511 5.41311 18.6376 8.55957 18.8986 12.5242C18.9206 12.7384 18.9982 12.9429 19.1323 13.0981C19.2769 13.2665 19.47 13.3617 19.6728 13.367L19.8298 13.3696C19.8465 13.3696 19.8642 13.3696 19.8809 13.3687C20.0414 13.359 20.1949 13.2859 20.3174 13.1589C20.4982 12.972 20.5908 12.6987 20.5705 12.4104C20.492 11.2458 20.2063 10.1182 19.724 9.05856C19.254 8.02972 18.6129 7.0961 17.8174 6.28326Z" fill="white"/>
+              <path d="M16.172 10.9416C15.8545 10.2637 15.4277 9.6483 14.9013 9.1114C14.3757 8.5745 13.7681 8.13282 13.097 7.79957C12.4057 7.45751 11.6667 7.23887 10.8986 7.15071C10.6402 7.12073 10.3854 7.19302 10.217 7.34466C10.0944 7.4531 10.0282 7.59327 10.0282 7.7405L10.0229 8.13634V8.13987C10.0247 8.30914 10.1006 8.47135 10.2381 8.59566C10.3625 8.70939 10.5291 8.78344 10.7055 8.8046C13.0432 9.07261 14.8924 10.961 15.1005 13.2946H15.1014C15.1173 13.4709 15.187 13.6376 15.2981 13.7645C15.4198 13.9047 15.5811 13.9849 15.7513 13.9902L16.1526 13.9955C16.1667 13.9955 16.1808 13.9955 16.1949 13.9946C16.3272 13.9867 16.4533 13.9259 16.5547 13.8183C16.7108 13.6543 16.7901 13.4031 16.7672 13.1456C16.6984 12.3786 16.4983 11.6372 16.172 10.9416Z" fill="white"/>
+              </svg>
+              (85) 3879-2205 | 3878-2204 | 3276-4655 | 3122-9742      
+          </a>
+        </li>
+        </ul>
+    </div>
+  </footer>
+
+  <a id="backToTopButton" href="#home">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="20" cy="20" r="20" fill="#143965"/>
+      <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>  
+  </a>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script src="main.js"></script>
+
+</body>
+</html>
